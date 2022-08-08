@@ -54,7 +54,7 @@ systemctl status xray.service
             "settings": {
                 "clients": [
                     {
-                        "password": "wlq@@1991QNZ"
+                        "password": "yourf***ingpassword"
                     }
                 ],
                 "fallbacks": [
