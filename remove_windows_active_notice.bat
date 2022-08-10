@@ -1,0 +1,6 @@
+:: 删除windows激活提示
+:: 右键以管理员身份运行
+@ECHO OFF
+TASKKILL /F /IM EXPLORER.EXE
+EXPLORER.EXE
+EXIT
