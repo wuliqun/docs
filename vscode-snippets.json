@@ -1,0 +1,157 @@
+{
+	"Print to console": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "log",
+		"body": [
+			"console.log($1)"
+		],
+		"description": "Log output to console"
+	},
+	"A btn": {
+		"prefix": "al",
+		"body": [
+			"<a href=\"javascript:void(0);\" class=\"$1\">$2</a>"
+		],
+		"description": "a tag for btn"
+	},
+	"avatar": {
+		"prefix": "ava",
+		"body": [
+			"<img v-avatar=\"$1\" alt=\"avatar\" />"
+		],
+		"description": "img avatar"
+	},
+	"i18n": {
+		"prefix": "tt",
+		"body": [
+			"{{ \\$t(\"$1\") }}"
+		],
+		"description": "a tag for btn"
+	},
+	"store": {
+		"scope": "javascript,typescript",
+		"prefix": "ist",
+		"body": [
+			"import { useStore } from \"vuex\"",
+			"const { state,commit } = useStore()"
+		],
+		"description": "a tag for btn"
+	},
+	"route": {
+		"scope": "javascript,typescript",
+		"prefix": "irt",
+		"body": [
+			"import { useRoute } from \"vue-router\"",
+			"const route = useRoute()"
+		],
+	},
+	"router": {
+		"scope": "javascript,typescript",
+		"prefix": "irr",
+		"body": [
+			"import { useRouter } from \"vue-router\"",
+			"const router = useRouter()"
+		],
+	},
+	"dialog": {
+		"scope": "javascript,typescript",
+		"prefix": "idd",
+		"body": [
+			"import { Dialog } from \"CMT/dialog\""
+		],
+	},
+	"toast": {
+		"scope": "javascript,typescript",
+		"prefix": "itt",
+		"body": [
+			"import Toast from \"../js/toast\""
+		],
+	},
+	"toast err": {
+		"scope": "javascript,typescript",
+		"prefix": "trr",
+		"body": [
+			"Toast(err)"
+		],
+	},
+	"then function": {
+		"scope": "javascript,typescript",
+		"prefix": "tre",
+		"body": [
+			"then(res=>{",
+			"",
+			"},err=>{",
+			"Toast(err);",
+			"});"
+		]
+	},
+	"computed": {
+		"scope": "javascript,typescript",
+		"prefix": "cmp",
+		"body": [
+			"const $1 = computed(()=>state.page.$1)"
+		],
+	},
+	"import components": {
+		"scope": "javascript,typescript",
+		"prefix": "icmp",
+		"body": [
+			"import $1 from \"../components/$1.vue\""
+		]
+	},
+	"settimeout": {
+		"scope": "javascript,typescript",
+		"prefix": "stt",
+		"body": [
+			"setTimeout(() => {",
+			"  $1",
+			"}, $2)"
+		],
+	},
+	"constConf": {
+		"scope": "javascript,typescript",
+		"prefix": "icc",
+		"body": [
+			"import { constConf } from \"GLOBAL/constConf\""
+		],
+	},
+	"customConf": {
+		"scope": "javascript,typescript",
+		"prefix": "icm",
+		"body": [
+			"import { customConf } from \"GLOBAL/customConf\""
+		],
+	},
+	"scss for": {
+		"prefix": "csf",
+		"body": [
+			"@for \\$i from 0 through 2$1 {",
+			"  &.$2-#{\\$i} {",
+			"    $3",
+			" }",
+			"}"
+		],
+		"description": ""
+	},
+	"scss for array": {
+		"prefix": "csfa",
+		"body": [
+			"@for \\$i from 1 through length(\\$arr) {",
+			"  \\$item: nth(\\$arr, \\$i);",
+			"  &.$1-#{\\$item} {",
+			"    $2",
+			"  }",
+			"}"
+		],
+		"description": ""
+	},
+	"region": {
+		"prefix": "reg",
+		"body": [
+			"// #region $1",
+			"$2",
+			"// #endregion"
+		],
+		"description": ""
+	}
+}
